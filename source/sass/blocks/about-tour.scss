@@ -1,0 +1,74 @@
+.about-tour {
+  padding-top: 15px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  &__video {
+    position: relative;
+
+    width: 290px;
+    height: 197px;
+  }
+
+  &__poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+  }
+
+  &__btn-play {
+    position: absolute;
+    bottom: 18px;
+    right: 6px;
+
+    width: 0;
+    height: 17px;
+    padding: 0;
+
+    background: none;
+    border-top: 9px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 12px solid $bright-color;
+
+    cursor: pointer;
+  }
+
+  &__description {
+    margin-top: 30px;
+  }
+
+  &__features {
+    margin-top: 35px;
+    padding: 0;
+
+    font-weight: 500;
+
+    list-style: none;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+  }
+
+  &__feature svg {
+    width: 36px;
+    margin-right: 8px;
+  }
+
+  &__feature + li {
+    margin-top: 16px;
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  li.about-tour__feature--last {
+    margin-top: 28px;
+  }
+}

@@ -1,0 +1,17 @@
+.map {
+  overflow: hidden;
+
+  &__wrapper {
+    position: relative;
+
+    height: 423px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: -700px;
+
+    height: 423px;
+  }
+}

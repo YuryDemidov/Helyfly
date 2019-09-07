@@ -1,0 +1,45 @@
+.good-comments {
+  display: flex;
+  padding-top: 8px;
+
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+
+  &__left-column svg {
+    width: 45px;
+    height: 55px;
+    margin-right: 0;
+    padding-top: 6px;
+  }
+
+  &__right-column {
+    margin-left: 5px;
+  }
+
+  &__text {
+    margin: 0;
+
+    font-weight: normal;
+
+    & b {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .good-comments {
+    font-size: 18px;
+    line-height: 26px;
+
+    &__right-column {
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+    }
+
+    &__rate {
+      margin-left: 14px;
+    }
+  }
+}
