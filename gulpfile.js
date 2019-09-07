@@ -30,28 +30,28 @@ gulp.task("style", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/images/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/images"));
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/images/**/*.{png,jpg}")
     .pipe(webp({quality: 80}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/images"));
 });
 
 gulp.task("sprite", function(){
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src("source/images/**/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/images"));
 });
 
 gulp.task("html", function(){
@@ -78,7 +78,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**",
+      "source/images/**",
       "source/js/**"
     ], {
       base: "source"

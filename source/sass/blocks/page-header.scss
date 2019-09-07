@@ -1,0 +1,125 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $desktop-width;
+  min-height: 60px;
+  margin: 0 auto;
+  padding: 0 4.5%;
+  padding-top: 5px;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  &__home-link {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__logo {
+    width: calc(68px + 5vw);
+  }
+
+  &__phone-text {
+    display: none;
+
+    color: $dim-color;
+  }
+
+  &__phone-number {
+    display: none;
+
+    color: currentColor;
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+
+  &__change-city {
+    margin-right: 35px;
+
+    color: $link-color;
+
+    background: none;
+    border: none;
+
+    &:hover {
+      color: $link-color-hover;
+
+      cursor: pointer;
+    }
+  }
+
+  &__right-column {
+    display: flex;
+    align-items: center;
+  }
+
+  &__account {
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../images/icons-sprite.png");
+    background-position: -153px -8px;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+  }
+
+  &__back-call {
+    display: none;
+    width: 165px;
+    height: 50px;
+    margin-left: 20px;
+    padding: 5px 15px;
+
+    font-weight: 500;
+    color: $accent-color;
+
+    background: none;
+    border: 1px solid $accent-color;
+    border-radius: 3px;
+
+    &:hover {
+      color: $bright-color;
+
+      background-color: $accent-color;
+
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-height: 100px;
+    padding: 0 2%;
+    padding-top: 27px;
+    padding-bottom: 23px;
+
+    &__home-link {
+      margin-right: 30px;
+    }
+
+    &__phone-number,
+    &__phone-text {
+      display: inline;
+    }
+
+    // На макете эти элементы не отрисованы,
+    // их можно удалить этим правилом,
+    // но с точки зрения UI, думаю, стоит оставить
+    //
+    // &__change-city,
+    // &__account {
+    //   display: none;
+    // }
+
+    &__back-call {
+      display: block;
+    }
+  }
+}

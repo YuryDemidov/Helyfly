@@ -1,0 +1,92 @@
+.first-screen {
+
+  color: $bright-color;
+
+  background-color: #4d5b77;
+  background-image: url("../images/main-bg--mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    padding: 0 4.5%;
+    padding-top: 120px;
+    padding-bottom: 155px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    margin-bottom: 34px;
+
+    line-height: 39px;
+  }
+
+  &__highlight {
+    color: $accent-color;
+  }
+
+  &__sale {
+    margin-bottom: 22px;
+  }
+
+  &__button {
+    width: 275px;
+    height: 68px;
+    padding: 10px;
+
+    font-weight: 900;
+    color: $bright-color;
+
+    background-color: transparent;
+    border: 3px solid $bright-color;
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+
+    &:hover {
+      color: $accent-color;
+
+      border-color: $accent-color;
+
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .first-screen {
+    background-image: url("../images/main-bg--tablet.jpg");
+
+    &__wrapper {
+      padding: 260px 3%;
+    }
+
+    &__heading {
+      margin-bottom: 19px;
+
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    &__button {
+      width: 304px;
+
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .first-screen {
+    background-image: url("../images/main-bg--desktop.jpg");
+
+    &__wrapper {
+      max-width: $desktop-width;
+      margin: 0 auto;
+      padding: 260px 2%;
+    }
+  }
+}

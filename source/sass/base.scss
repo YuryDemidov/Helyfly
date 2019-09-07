@@ -46,8 +46,10 @@
 body {
   min-width: $mobile-width;
 
-  font-family: $standart-font;
-  font-size: 16px;
+  font-style: normal;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $standart-font;
   color: $main-text-color;
 }
