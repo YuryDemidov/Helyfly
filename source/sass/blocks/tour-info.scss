@@ -1,0 +1,47 @@
+.tour-info {
+  margin-top: 52px;
+  margin-right: 23px;
+  margin-left: 23px;
+
+  border: 1px solid $lightgray-color;
+
+  &__slider {
+    margin-bottom: 36px;
+  }
+
+  &__photographer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__left-column {
+    margin-left: auto;
+  }
+
+  &__photo {
+    border-radius: 50%;
+  }
+
+  &__right-column {
+    margin-left: 11px;
+    width: 62%;
+
+    & .photographer__name {
+      margin: 0;
+
+      font-size: 16px;
+    }
+
+    & .photographer__subtitle {
+      margin: 0;
+    }
+
+    & .photographer__more-info {
+      display: block;
+      margin-top: 3px;
+      margin-bottom: 12px;
+
+      font-weight: 500;
+    }
+  }
+}

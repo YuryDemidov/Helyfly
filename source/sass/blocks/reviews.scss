@@ -1,0 +1,45 @@
+.reviews {
+  padding-top: 16px;
+
+  &__review {
+    margin-top: 48px;
+  }
+
+  &__show-all {
+    position: relative;
+
+    display: block;
+    margin: 40px auto;
+    padding: 0;
+    padding-right: 20px;
+
+    font-weight: 500;
+    font-size: 17px;
+    color: $link-color;
+
+    background: none;
+    border: none;
+
+    &:hover {
+      color: $link-color-hover;
+
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 4px;
+
+      width: 9px;
+      height: 9px;
+
+      border-right: 2px solid $lightgray-color;
+      border-bottom: 2px solid $lightgray-color;
+      border-radius: 1px;
+
+      transform: rotate(-45deg);
+    }
+  }
+}

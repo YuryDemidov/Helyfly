@@ -1,0 +1,83 @@
+.schedule {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  border-collapse: collapse;
+  border: 1px solid $lightgray-color;
+
+  &__row + .schedule__row {
+    border-top: 1px solid $lightgray-color;
+  }
+
+  &__cell {
+    padding: 27px 20px;
+  }
+
+  &__cell p + p {
+    margin: 0;
+    margin-top: 7px;
+  }
+
+  &__header {
+    padding-top: 18px;
+    padding-bottom: 14px;
+
+    text-align: center;
+  }
+
+  &__header p {
+    margin: 0;
+  }
+
+  &__time {
+    margin: 0;
+  }
+
+  &__price {
+    font-weight: 600;
+  }
+
+  &__choose {
+    margin-top: 20px;
+    padding: 16px 30px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $accent-color;
+
+    background: none;
+    border: 2px solid $accent-color;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $bright-color;
+
+      background-color: $accent-color;
+    }
+  }
+
+  &__footer {
+    padding-bottom: 9px;
+    padding-left: 15px;
+  }
+
+  &__good-comments {
+    padding-top: 0;
+
+    font-size: 13px;
+
+    border: none;
+  }
+
+  &__good-comments .good-comments__right-column {
+    margin-left: 8px;
+  }
+}

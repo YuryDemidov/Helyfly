@@ -1,3 +1,109 @@
 .page-footer {
   min-height: 100px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.5%;
+    padding-top: 40px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid $dim-color;
+  }
+
+  &__home-link {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__logo {
+    width: calc(68px + 5vw);
+  }
+
+  &__bottom {
+    padding: 18px 4.5%;
+  }
+
+  &__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__payment-methods {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  &__payment-method {
+    width: 33%;
+
+    background-image: url("../images/icons-sprite.png");
+    background-position-y: 0;
+    background-repeat: no-repeat;
+
+    &.mastercard {
+      background-position: -7px 2px;
+    }
+
+    &.visa {
+      background-position-x: -102px;
+    }
+
+    &.paypal {
+      background-position-x: -50px;
+    }
+  }
+
+  &__set-language {
+    position: relative;
+
+    padding-right: 18px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      right: 3px;
+
+      width: 9px;
+      height: 9px;
+
+      border-right: 2px solid $lightgray-color;
+      border-bottom: 2px solid $lightgray-color;
+      border-radius: 1px;
+
+      transform: rotate(45deg);
+    }
+
+    &:hover::before {
+      border-color: $link-color-hover;
+    }
+  }
+
+  &__support {
+    margin-bottom: 7px;
+
+    text-align: center;
+    font-size: 14px;
+    color: $dim-color;
+  }
+
+  &__copyright {
+    margin: 0;
+
+    text-align: center;
+    font-size: 14px;
+    color: $dim-color;
+  }
 }
