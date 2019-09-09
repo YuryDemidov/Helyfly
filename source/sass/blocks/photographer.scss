@@ -100,3 +100,34 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .photographer {
+    margin-top: 16px;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__card {
+      order: 1;
+
+      width: 25%;
+      margin-top: 40px;
+      margin-right: 9%;
+    }
+
+    &__about {
+      width: 52%;
+    }
+
+    &__text {
+      margin-bottom: 5px;
+    }
+
+    &__read-more {
+      margin-bottom: 20px;
+    }
+  }
+}

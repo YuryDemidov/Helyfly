@@ -6,8 +6,8 @@
     top: 30px;
     z-index: 10;
 
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
 
     font-size: 0;
 
@@ -18,6 +18,12 @@
     border-radius: 2px;
 
     cursor: pointer;
+
+    &:focus {
+      border-width: 5px;
+      border-color: $accent-color;
+      outline: none;
+    }
 
     &--previous {
       left: 10px;
@@ -137,5 +143,46 @@
 
   &__control + li {
     margin-left: 11px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    &__btn,
+    &__controls {
+      display: none;
+    }
+
+    &__slides {
+      margin-top: 50px;
+    }
+
+    &__slide {
+      position: static;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 90px;
+      margin-bottom: 5px;
+    }
+
+    &__question,
+    &__answer {
+      flex-shrink: 0;
+      width: 80%;
+      margin-top: 5px;
+      margin-left: 20px;
+
+      text-align: left;
+      font-size: 18px;
+    }
+
+    &__number {
+      width: 61px;
+      height: 61px;
+
+      font-size: 36px;
+    }
   }
 }

@@ -81,3 +81,55 @@
     margin-left: 8px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .schedule {
+    width: 68%;
+    margin-bottom: 82px;
+    margin-left: 0;
+
+    &__cell {
+      display: flex;
+      justify-content: space-between;
+      padding: 19px 27px;
+
+      text-align: left;
+    }
+
+    &__header {
+      padding: 27px;
+      padding-bottom: 19px;
+
+      text-align: left;
+    }
+
+    &__price {
+      font-size: 0;
+
+      &::before {
+        content: "1500Р";
+
+        font-size: 18px;
+      }
+    }
+
+    &__choose {
+      height: 50px;
+    }
+
+    p.schedule__places {
+      margin-top: 0;
+    }
+
+    &__footer {
+      padding-top: 32px;
+      padding-bottom: 29px;
+
+      box-shadow: 0 -1px 0 #ffffff; // Deletes border-top
+    }
+
+    &__good-comments {
+      font-size: 18px;
+    }
+  }
+}

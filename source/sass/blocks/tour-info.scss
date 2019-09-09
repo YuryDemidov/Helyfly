@@ -26,17 +26,17 @@
     margin-left: 11px;
     width: 62%;
 
-    & .photographer__name {
+    .photographer__name {
       margin: 0;
 
       font-size: 16px;
     }
 
-    & .photographer__subtitle {
+    .photographer__subtitle {
       margin: 0;
     }
 
-    & .photographer__more-info {
+    .photographer__more-info {
       display: block;
       margin-top: 3px;
       margin-bottom: 12px;
@@ -45,3 +45,56 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .tour-info {
+    position: absolute;
+    top: 20px;
+    left: 2%;
+
+    width: 350px;
+    margin: 0;
+
+    background-color: #ffffff;
+
+    &__container {
+      padding: 0 30px;
+      padding-bottom: 20px;
+    }
+
+    &__slider {
+      margin-bottom: 13px;
+    }
+
+    &__photographer {
+      justify-content: flex-start;
+    }
+
+    &__left-column {
+      margin-left: 0;
+    }
+
+    &__right-column {
+      width: 66%;
+
+      .photographer__name {
+        font-size: 18px;
+      }
+
+      .photographer__subtitle {
+        font-size: 16px;
+      }
+
+      .photographer__more-info {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tour-info {
+    width: 420px;
+  }
+}
+

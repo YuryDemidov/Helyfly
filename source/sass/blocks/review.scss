@@ -11,6 +11,7 @@
 
   &__header {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__author-photo {
@@ -46,6 +47,8 @@
   &__recommend-mark {
     position: relative;
 
+    margin: 0;
+    margin-top: 24px;
     padding-left: 20px;
 
     color: $dim-color;
@@ -67,6 +70,7 @@
   }
 
   &__text {
+    margin-top: 4px;
     margin-bottom: 18px;
   }
 
@@ -77,5 +81,58 @@
 
   &__date {
     color: $dim-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    &--unvisible {
+      display: block;
+    }
+
+    &__author-photo {
+      width: 101px;
+      height: 101px;
+    }
+
+    &__author-name {
+      margin-top: 10px;
+
+      font-size: 18px;
+    }
+
+    &__author-profession {
+      margin-top: 10px;
+    }
+
+    &__rating {
+      margin-top: 5px;
+    }
+
+    &__recommend-mark {
+      align-self: flex-end;
+      margin-bottom: 7px;
+    }
+
+    &__main {
+      width: 510px;
+      margin-left: 120px;
+
+      font-size: 16px;
+    }
+
+    &__text {
+      margin-bottom: 14px;
+    }
+
+    &__plus-line {
+      display: none;
+    }
+
+    &__footer {
+      width: 510px;
+      min-height: 51px;
+      margin-left: 120px;
+    }
   }
 }

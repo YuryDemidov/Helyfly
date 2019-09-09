@@ -39,7 +39,20 @@
     }
 
     &__rate {
+      flex-shrink: 0;
       margin-left: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .good-comments {
+    &__left-column svg {
+      width: 38px;
+    }
+
+    &__right-column {
+      margin-left: 5px;
     }
   }
 }

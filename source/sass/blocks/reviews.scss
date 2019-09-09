@@ -41,5 +41,19 @@
 
       transform: rotate(-45deg);
     }
+
+    &:hover::before {
+      border-color: currentColor;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 105px;
+
+    .section-title::after {
+      content: ":";
+    }
   }
 }

@@ -1,15 +1,14 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: $desktop-width;
-  min-height: 60px;
-  margin: 0 auto;
-  padding: 0 4.5%;
-  padding-top: 5px;
-
   font-size: 14px;
   line-height: 17px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    padding-top: 5px;
+  }
 
   &__home-link {
     display: inline-block;
@@ -33,7 +32,7 @@
     text-decoration: none;
 
     &:hover {
-      color: #000000;
+      color: $accent-color;
     }
   }
 
@@ -95,10 +94,17 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 100px;
-    padding: 0 2%;
-    padding-top: 27px;
-    padding-bottom: 23px;
+    position: relative;
+    z-index: 1;
+
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+
+    &__container {
+      min-height: 100px;
+      padding: 0 2%;
+      padding-top: 27px;
+      padding-bottom: 23px;
+    }
 
     &__home-link {
       margin-right: 30px;

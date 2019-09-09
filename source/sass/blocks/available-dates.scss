@@ -5,3 +5,31 @@
     margin-bottom: 37px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .available-dates {
+    &__title {
+      margin-top: 26px;
+      margin-left: 22px;
+      margin-right: 10px;
+      padding-top: 48px;
+
+      border-top: 1px solid $lightgray-color;
+
+      &::after {
+        content: ":";
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .available-dates {
+    &__title {
+      max-width: 1125px;
+      margin-right: auto;
+      margin-bottom: 25px;
+      margin-left: auto;
+    }
+  }
+}
