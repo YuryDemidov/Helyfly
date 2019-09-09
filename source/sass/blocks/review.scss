@@ -47,6 +47,7 @@
   &__recommend-mark {
     position: relative;
 
+    width: 100%;
     margin: 0;
     margin-top: 24px;
     padding-left: 20px;
@@ -90,6 +91,20 @@
       display: block;
     }
 
+    &__header--no-profession {
+      margin-bottom: -20px;
+
+      .review__rating {
+        margin-top: 16px;
+      }
+
+      .review__recommend-mark {
+        align-self: center;
+        margin-bottom: 0;
+        margin-left: 50px;
+      }
+    }
+
     &__author-photo {
       width: 101px;
       height: 101px;
@@ -111,6 +126,7 @@
 
     &__recommend-mark {
       align-self: flex-end;
+      width: auto;
       margin-bottom: 7px;
     }
 

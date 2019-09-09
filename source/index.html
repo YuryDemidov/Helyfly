@@ -164,6 +164,12 @@
             <div class="schedule__row">
               <div class="schedule__cell schedule__header">
                 <p>Пятница, 14 сентября</p>
+                <button class="schedule__choose-date">
+                  Выбор даты
+                  <svg width="18" height="18" fill="#83888a">
+                    <use xlink:href="images/sprite.svg#calendar"></use>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="schedule__row">
@@ -337,7 +343,7 @@
             </footer>
           </article>
           <article class="reviews__review review review--unvisible">
-            <header class="review__header">
+            <header class="review__header review__header--no-profession">
               <img class="review__author-photo" src="images/comment-author--3.jpg" width="84" height="84" alt="Аватарка Джима Керри">
               <div class="review__info">
                 <h3 class="review__author-name">Джим Керри</h3>
@@ -364,7 +370,7 @@
               <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
             </header>
             <div class="review__main">
-              <p class="review__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+              <p class="review__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и&nbsp;сытными)) Мы с&nbsp;собой ничего не&nbsp;брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А&nbsp;ещё нам всем напечатали по&nbsp;сертификату воздухоплавателя, правда некоторые ленятся за&nbsp;ним съездить))) Но&nbsp;всё равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
             </div>
             <footer class="review__footer">
               <p class="review__date">27 апреля, 2019г.</p>
@@ -381,28 +387,29 @@
           <img class="page-footer__logo" src="images/logo.svg" alt="Логотип компании Helifly">
         </a>
         <ul class="page-footer__social social">
-          <li class="social__btn">
-            <a class="social__link" href="vk.com">
+          <li class="social__btn" aria-label="Наша группа Вконтакте">
+            <a class="social__link" href="https://vk.com">
               <svg width="26" height="16">
                 <use xlink:href="images/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__btn">
-            <a class="social__link" href="facebook.com">
+            <a class="social__link" href="https://facebook.com" aria-label="Наша группа на Фейсбуке">
               <svg width="26" height="27">
                 <use xlink:href="images/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__btn">
-            <a class="social__link" href="instagram.com">
+            <a class="social__link" href="https://instagram.com" aria-label="Мы в Инстаграме">
               <svg width="26" height="26">
                 <use xlink:href="images/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
         </ul>
+        <button class="page-footer__set-language page-footer__set-language--tablet" type="button">RU</button>
       </div>
       <div class="page-footer__bottom">
         <div class="page-footer__flex-container">
@@ -412,10 +419,12 @@
             <li class="page-footer__payment-method visa">Visa</li>
             <li class="page-footer__payment-method paypal">Paypal</li>
           </ul>
-          <button class="page-footer__set-language" type="button">RU</button>
+          <button class="page-footer__set-language page-footer__set-language--mobile" type="button">RU</button>
         </div>
-        <p class="page-footer__support">Тех. поддержка: 8(800)700-00-00</p>
-        <p class="page-footer__copyright">&copy; 2018 HELYFLY. All Rights Reserved.</p>
+        <div class="page-footer__info">
+          <p class="page-footer__support">Тех. поддержка: 8(800)700-00-00</p>
+          <p class="page-footer__copyright">&copy; 2018 HELYFLY. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
     <script src="js/svgxuse.min.js" defer></script>

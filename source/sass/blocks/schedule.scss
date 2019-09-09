@@ -30,6 +30,10 @@
     text-align: center;
   }
 
+  &__choose-date {
+    display: none;
+  }
+
   &__header p {
     margin: 0;
   }
@@ -97,10 +101,35 @@
     }
 
     &__header {
+      display: flex;
+      align-items: center;
       padding: 27px;
-      padding-bottom: 19px;
+      padding-top: 23px;
+      padding-bottom: 14px;
 
       text-align: left;
+    }
+
+    &__choose-date {
+      display: block;
+      width: 35px;
+      height: 35px;
+      margin-right: auto;
+      margin-left: 19px;
+
+      font-size: 0;
+
+      background: none;
+      border: 1px solid #c4c4c4;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: $accent-color;
+        outline: none;
+
+        cursor: pointer;
+      }
     }
 
     &__price {

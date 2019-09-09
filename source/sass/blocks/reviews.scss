@@ -26,7 +26,8 @@
       cursor: pointer;
     }
 
-    &::before {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       top: 6px;
@@ -42,6 +43,10 @@
       transform: rotate(-45deg);
     }
 
+    &::after {
+      display: none;
+    }
+
     &:hover::before {
       border-color: currentColor;
     }
@@ -50,10 +55,37 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding-top: 105px;
+    padding-top: 25px;
+    padding-bottom: 8px;
 
     .section-title::after {
       content: ":";
     }
+
+    &__show-all {
+      padding-left: 20px;
+
+      &::before,
+      &::after {
+        top: 2px;
+
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        left: 4px;
+        display: block;
+      }
+
+      &:hover::after {
+        border-color: currentColor;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 105px;
   }
 }

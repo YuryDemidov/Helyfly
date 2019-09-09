@@ -52,11 +52,11 @@
     }
 
     &.visa {
-      background-position-x: -102px;
+      background-position-x: -103px;
     }
 
     &.paypal {
-      background-position-x: -50px;
+      background-position-x: -49px;
     }
   }
 
@@ -69,6 +69,10 @@
     border: none;
 
     cursor: pointer;
+
+    &--tablet {
+      display: none;
+    }
 
     &::before {
       content: "";
@@ -107,3 +111,85 @@
     color: $dim-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+
+    &__top {
+      align-items: flex-start;
+      margin-bottom: 21px;
+
+      border-bottom: none;
+    }
+
+    &__home-link {
+      margin-right: auto;
+      margin-left: 36px;
+    }
+
+    &__set-language {
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      padding-top: 2px;
+      padding-bottom: 22px;
+
+      background-color: #faf9f8;
+    }
+
+    &__payment-methods {
+      width: 170px;
+      height: 53px;
+      margin-left: 34px;
+    }
+
+    &__payment-method {
+      height: 45px;
+
+      background-size: cover;
+    }
+
+    &__payment-method.visa {
+      background-position-x: -119px;
+    }
+
+    &__payment-method.paypal {
+      background-position-x: -54px;
+    }
+
+    &__info {
+      margin-left: auto;
+    }
+
+    &__support {
+      margin-top: 0;
+
+      text-align: right;
+    }
+
+    &__copyright {
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__info {
+      margin-left: 19%;
+
+      text-align: center;
+    }
+  }
+}
+
