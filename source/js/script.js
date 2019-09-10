@@ -6,7 +6,7 @@ var closeArea = popUp.querySelector('.popup__background');
 var dateInput = popUp.querySelector('#date-id');
 
 var restoreScrolling = function (container) {
-  container.style.overflow = 'initial';
+  container.style.overflow = 'visible';
 }
 
 for (var i = 0; i <= openButton.length - 1; i++) {
