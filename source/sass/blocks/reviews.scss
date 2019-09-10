@@ -20,10 +20,10 @@
     background: none;
     border: none;
 
+    cursor: pointer;
+
     &:hover {
       color: $link-color-hover;
-
-      cursor: pointer;
     }
 
     &::before,

@@ -59,6 +59,10 @@
     transition: all 0.3s ease-in;
   }
 
+  &__js-invisible {
+    display: none;
+  }
+
   &__description {
     margin-top: 30px;
   }

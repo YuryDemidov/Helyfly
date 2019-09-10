@@ -1,0 +1,91 @@
+.popup {
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+
+  &__background {
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+  }
+
+  &__form {
+    z-index: 20;
+
+    width: 90%;
+    min-width: 290px;
+    max-width: 615px;
+    margin: auto;
+    margin-top: 100px;
+
+    background-color: #ffffff;
+  }
+
+  &__close-btn {
+    position: relative;
+
+    display: block;
+    width: 30px;
+    height: 22px;
+    margin-top: 18px;
+    margin-left: auto;
+
+    font-size: 0;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: $accent-color;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+
+      width: 2px;
+      height: 24px;
+
+      background-color: $dim-color;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}

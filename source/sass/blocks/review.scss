@@ -19,6 +19,7 @@
   }
 
   &__info {
+    min-width: 180px;
     margin-left: 18px;
   }
 
@@ -101,7 +102,6 @@
       .review__recommend-mark {
         align-self: center;
         margin-bottom: 0;
-        margin-left: 50px;
       }
     }
 

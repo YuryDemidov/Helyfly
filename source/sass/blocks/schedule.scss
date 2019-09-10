@@ -31,7 +31,34 @@
   }
 
   &__choose-date {
-    display: none;
+    display: none; // Is used in another block on mobile version
+    width: 35px;
+    height: 35px;
+    margin-right: auto;
+    margin-left: 19px;
+
+    font-size: 0;
+
+    background: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+
+    svg {
+      filter: grayscale(1);
+    }
+
+    &:hover svg {
+      filter: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $accent-color;
+      outline: none;
+
+      cursor: pointer;
+    }
   }
 
   &__header p {
@@ -112,24 +139,6 @@
 
     &__choose-date {
       display: block;
-      width: 35px;
-      height: 35px;
-      margin-right: auto;
-      margin-left: 19px;
-
-      font-size: 0;
-
-      background: none;
-      border: 1px solid #c4c4c4;
-
-      &:hover,
-      &:active,
-      &:focus {
-        border-color: $accent-color;
-        outline: none;
-
-        cursor: pointer;
-      }
     }
 
     &__price {

@@ -187,7 +187,10 @@
   .page-footer {
     &__info {
       margin-left: 19%;
+    }
 
+    &__support,
+    &__copyright {
       text-align: center;
     }
   }

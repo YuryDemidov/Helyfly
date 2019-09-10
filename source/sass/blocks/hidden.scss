@@ -1,0 +1,23 @@
+.hidden {
+  border: none;
+
+  &__content {
+    display: none;
+  }
+
+  &__photo {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hidden {
+    &__photo {
+      display: block;
+    }
+
+    &__content.photographs__slide {
+      display: none;
+    }
+  }
+}

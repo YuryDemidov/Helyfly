@@ -1,6 +1,11 @@
 .map {
   overflow: hidden;
 
+  iframe {
+    position: relative;
+    z-index: 1;
+  }
+
   &__wrapper {
     position: relative;
 
@@ -19,6 +24,10 @@
 @media (min-width: $tablet-width) {
   .map {
     position: relative;
+
+    iframe {
+      height: inherit;
+    }
 
     &__wrapper {
       height: 509px;

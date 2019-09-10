@@ -53,3 +53,14 @@ body {
   font-family: $standart-font;
   color: $main-text-color;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  .photographs__slide {
+    width: 250px;
+  }
+
+  .reservation {
+    min-height: 900px;
+  }
+}
