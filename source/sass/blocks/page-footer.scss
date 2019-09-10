@@ -185,6 +185,11 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
+
+    &__top {
+      padding-top: 48px;
+    }
+
     &__info {
       margin-left: 19%;
     }

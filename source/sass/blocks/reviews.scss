@@ -85,7 +85,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
+  .reviews.hidden {
     padding-top: 105px;
   }
 }

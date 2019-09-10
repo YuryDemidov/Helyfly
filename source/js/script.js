@@ -5,6 +5,10 @@ var closeButton = popUp.querySelector('.popup__close-btn');
 var closeArea = popUp.querySelector('.popup__background');
 var dateInput = popUp.querySelector('#date-id');
 
+var restoreScrolling = function (container) {
+  container.style.overflow = 'initial';
+}
+
 for (var i = 0; i <= openButton.length - 1; i++) {
   openButton[i].addEventListener('click', function(evt){
     evt.preventDefault();
@@ -16,18 +20,18 @@ for (var i = 0; i <= openButton.length - 1; i++) {
 
 closeButton.addEventListener('click', function() {
   popUp.classList.remove('popup--visible');
-    document.body.style.overflow = 'initial';
+  restoreScrolling(document.body);
 });
 closeArea.addEventListener('click', function() {
   popUp.classList.remove('popup--visible');
-    document.body.style.overflow = 'initial';
+  restoreScrolling(document.body);
 });
 
 window.addEventListener('keydown', function() {
   if (event.code == 'Escape') {
     if (popUp.classList.contains('popup--visible')) {
       popUp.classList.remove('popup--visible');
-    document.body.style.overflow = 'initial';
+      restoreScrolling(document.body);
     }
   }
 });
@@ -43,42 +47,39 @@ videoContainer.addEventListener('click', function() {
 });
 
 // Script provides the slider function
-// if (window.matchMedia("(max-width: 750px)").matches) {
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  var slideIndex = 1;
-  showSlides(slideIndex);
+// Function shows next slide
+function plusSlide() {
+  showSlides(slideIndex += 1);
+}
 
-  // Function shows next slide
-  function plusSlide() {
-    showSlides(slideIndex += 1);
+// Function shows previous slide
+function minusSlide() {
+  showSlides(slideIndex -= 1);
+}
+
+// Function sets current slide
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// Main slider function
+function showSlides(n) {
+  var i;
+  var slides = document.querySelectorAll(".photographs__slide");
+  if (n > slides.length) {
+    slideIndex = 1
   }
-
-  // Function shows previous slide
-  function minusSlide() {
-    showSlides(slideIndex -= 1);
+  if (n < 1) {
+      slideIndex = slides.length
   }
-
-  // Function sets current slide
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
+  for (i = 0; i < slides.length; i++) {
+      slides[i].classList.add('hidden__photo');
   }
-
-  // Main slider function
-  function showSlides(n) {
-    var i;
-    var slides = document.querySelectorAll(".photographs__slide");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.add('hidden__photo');
-    }
-    slides[slideIndex - 1].classList.remove('hidden__photo', 'hidden__content');
-  }
-// }
+  slides[slideIndex - 1].classList.remove('hidden__photo', 'hidden__content');
+}
 
 // Script displays full content
 // after click on button "Show more"
