@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Helifly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon--16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon--32.png" sizes="32x32" type="image/png">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <div class="page-header__left-column">
+          <a class="page-header__home-link">
+            <span class="visually-hidden">Helifly</span>
+            <img class="page-header__logo" src="images/logo.svg" alt="Логотип компании Helifly">
+          </a>
+          <span class="page-header__phone-text">Телефон:</span><a class="page-header__phone-number" href="tel:88001231212">8(800)-123-12-12</a>
+        </div>
+        <div class="page-header__central-column">
+          <button class="page-header__change-city" type="button">Москва</button>
+        </div>
+        <div class="page-header__right-column">
+          <a class="page-header__account" title="Личный кабинет"><span class="visually-hidden">Войти</span></a>
+          <button class="button page-header__back-call" type="button">Обратный звонок</button>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="first-screen">
+        <div class="first-screen__wrapper">
+          <div class="first-screen__container">
+            <h1 class="first-screen__heading">Эксклюзивная <span class="first-screen__highlight">фотосессия</span> при&nbsp;полёте на&nbsp;вертолёте</h1>
+            <div class="first-screen__sale sale">
+              <p class="sale__text">Стоимость:<br>
+              <b class="sale__amount">1500&#x20bd;</b></p>
+              <div class="sale__percent-symbol">%</div>
+            </div>
+            <button class="first-screen__button popup-open-button" type="button">Забронировать место</button>
+          </div>
+        </div>
+      </section>
+      <section class="about-tour">
+        <div class="container about-tour__container">
+          <h2 class="about-tour__title section-title">Фотосессия в&nbsp;вертолёте</h2>
+          <div class="about-tour__video">
+            <iframe width="290" height="197" src="https://www.youtube.com/embed/xF_FgpGF1ps" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            <img class="about-tour__poster" src="images/video-poster.jpg" width="290" height="197" alt="">
+            <button class="about-tour__btn-play" type="button"></button>
+          </div>
+          <p class="about-tour__description">Полет на&nbsp;вертолёте это прекрасная возможность получить новые ощущения! А&nbsp;наш замечательный фотограф запечатлит лучшие моменты!</p>
+          <ul class="about-tour__features">
+            <li class="about-tour__feature">
+              <svg width="32" height="32">
+                <use xlink:href="images/sprite.svg#clock"></use>
+              </svg>
+              <p class="about-tour__item">3 часа съёмки</p>
+            </li>
+            <li class="about-tour__feature">
+              <svg width="31" height="28">
+                <use xlink:href="images/sprite.svg#dialog"></use>
+              </svg>
+              <p class="about-tour__item"><span class="about-tour__desktop-invisible-text">Русский</span><span class="about-tour__desktop-changed-text">Готовы ответить на любые вопросы</span></p>
+            </li>
+            <li class="about-tour__feature">
+              <svg width="31" height="20">
+                <use xlink:href="images/sprite.svg#money"></use>
+              </svg>
+              <p class="about-tour__item">от <b>850$</b></p>
+            </li>
+            <li class="about-tour__feature">
+              <svg width="35" height="28">
+                <use xlink:href="images/sprite.svg#map-pin"></use>
+              </svg>
+              <p class="about-tour__item"><span class="about-tour__desktop-invisible-text">Дубаи</span><span class="about-tour__desktop-changed-text">Москва</span></p>
+            </li>
+            <li class="about-tour__feature">
+              <svg width="35" height="28">
+                <use xlink:href="images/sprite.svg#camera"></use>
+              </svg>
+              <p class="about-tour__item">Более 50 фотографий</p>
+            </li>
+            <li class="about-tour__feature about-tour__feature--last good-comments">
+              <div class="good-comments__left-column">
+                <svg width="45" height="49">
+                  <use xlink:href="images/sprite.svg#trophy"></use>
+                </svg>
+              </div>
+              <div class="good-comments__right-column">
+                <p class="good-comments__text">Более <b class="about-tour__desktop-invisible-text">1</b><b>50</b> отзывов с&nbsp;оценкой <span class="visually-hidden">пять звёзд</span></p>
+                <div class="good-comments__rate rating">
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="photographs">
+        <div class="container photographs__container">
+          <h2 class="photographs__title section-title">Фотографии пакета</h2>
+          <div class="photographs__slider">
+            <button class="photographs__btn photographs__btn--previous" onclick="minusSlide()">Предыдущее фото</button>
+            <button class="photographs__btn photographs__btn--next" onclick="plusSlide()">Следующее фото</button>
+            <img class="photographs__slide photographs__slide--1" src="images/slider-photo--1.jpg" alt="">
+            <img class="photographs__slide photographs__slide--2" src="images/slider-photo--2.jpg" alt="">
+            <img class="photographs__slide photographs__slide--3" src="images/slider-photo--3.jpg" alt="">
+            <img class="photographs__slide photographs__slide--4" src="images/slider-photo--4.jpg" alt="">
+            <img class="photographs__slide photographs__slide--5" src="images/slider-photo--3.jpg" alt="">
+            <img class="photographs__slide photographs__slide--6" src="images/slider-photo--4.jpg" alt="">
+            <img class="photographs__slide photographs__slide--7" src="images/slider-photo--2.jpg" alt="">
+            <img class="photographs__slide photographs__slide--8" src="images/slider-photo--3.jpg" alt="">
+            <div class="hidden photographs__slider">
+              <img class="photographs__slide photographs__slide--1 hidden__content" src="images/slider-photo--1.jpg" alt="">
+              <img class="photographs__slide photographs__slide--2 hidden__content" src="images/slider-photo--2.jpg" alt="">
+              <img class="photographs__slide photographs__slide--3 hidden__content" src="images/slider-photo--3.jpg" alt="">
+              <img class="photographs__slide photographs__slide--4 hidden__content" src="images/slider-photo--4.jpg" alt="">
+              <img class="photographs__slide photographs__slide--5 hidden__content" src="images/slider-photo--3.jpg" alt="">
+              <img class="photographs__slide photographs__slide--6 hidden__content" src="images/slider-photo--4.jpg" alt="">
+              <img class="photographs__slide photographs__slide--7 hidden__content" src="images/slider-photo--2.jpg" alt="">
+              <img class="photographs__slide photographs__slide--8 hidden__content" src="images/slider-photo--3.jpg" alt="">
+              <div class="photographs__button-container">
+                <button class="photographs__show-all hidden__open-button" type="button">Показать все фото</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="photographer">
+        <div class="container photographer__container">
+          <h2 class="visually-hidden">Фотограф</h2>
+          <aside class="photographer__card">
+            <svg class="photographer__heart-symbol" width="31" height="27">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <img class="photographer__photo" src="images/photographer.jpg" alt="Фотограф Марина Иванова" width="139" height="139">
+            <h3 class="photographer__name">Марина Иванова</h3>
+            <p class="photographer__subtitle">Фотограф</p>
+            <a class="photographer__more-info" href="#">Показать больше<br>информации о&nbsp;фотографе</a>
+          </aside>
+          <section class="photographer__about">
+            <div class="hidden">
+              <h3 class="photographer__heading">Об организаторе:</h3>
+              <p class="photographer__text">Всем привет! Я фотограф Мария! И помимо фотосъёмки я также являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в&nbsp;маркетинге, операциях и&nbsp;услугах обслуживания клиентов, специализирующихся на&nbsp;совместном использовании и&nbsp;частных турах.</p>
+              <p class="photographer__text">Сначала мы (я и&nbsp;моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и&nbsp;планам клиента. Мы&nbsp;никогда не&nbsp;зависим от&nbsp;субпоставщиков и&nbsp;не&nbsp;свяжемся <span class="hidden__content">со смыслом жизни, который, следовательно, творит данный закон внешнего мира. Дискретность амбивалентно транспонирует гравитационный парадокс. Гедонизм осмысляет дедуктивный метод. Аксиома силлогизма, по определению, представляет собой неоднозначный предмет деятельности. Гедонизм осмысляет дедуктивный метод. Надстройка нетривиальна.</span></p>
+              <p class="hidden__content">Созерцание непредсказуемо. Сомнение рефлектирует естественный закон исключённого третьего.. Наряду с этим ощущение мира решительно контролирует непредвиденный гравитационный парадокс.</p>
+              <button class="photographer__read-more hidden__open-button" type="button">Читать ещё</button>
+            </div>
+            <div class="hidden">
+              <h3 class="photographer__heading">Что я предоставлю:</h3>
+              <p class="photographer__text">
+                Встречу вас на&nbsp;машине после длительного перелёта.<br>
+                Качественный подбор места и&nbsp;локации для&nbsp;вашей съёмки.<br>
+                При&nbsp;необходимости всегда возможно прерваться на&nbsp;обед&nbsp;/&nbsp;ужин.<br>
+                Более 50 фотографий на&nbsp;выходе с&nbsp;обработкой и&nbsp;замечательные впечатления о&nbsp;Дубае!
+              </p>
+              <p class="hidden__content">Равным образом рамки и место обучения кадров позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также новая модель организационной деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+              <p class="hidden__content">Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации новых предложений. Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание модели развития.</p>
+              <button class="photographer__read-more hidden__open-button" type="button">Читать ещё</button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="available-dates">
+        <h2 class="section-title available-dates__title">Доступная съёмка<br>в&nbsp;ближайшее время</h2>
+        <div class="container">
+          <div class="available-dates__schedule schedule">
+            <div class="schedule__row">
+              <div class="schedule__cell schedule__header">
+                <p>Пятница, 14 сентября</p>
+                <button class="schedule__choose-date" type="button">
+                  Выбор даты
+                  <svg width="18" height="18" fill="#83888a">
+                    <use xlink:href="images/sprite.svg#calendar--colored"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <div class="schedule__cell">
+                <div class="shedule__info">
+                  <p class="schedule__time">15:00 - 18:00</p>
+                  <p class="schedule__price">850$</p>
+                  <p class="schedule__places">Осталось — 1 место</p>
+                </div>
+                <button class="schedule__choose  popup-open-button" type="button">Выбрать</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <div class="schedule__cell">
+                <div class="shedule__info">
+                  <p class="schedule__time">19:00 - 22:00</p>
+                  <p class="schedule__price">850$</p>
+                  <p class="schedule__places">Осталось — 1 место</p>
+                </div>
+                <button class="schedule__choose  popup-open-button" type="button">Выбрать</button>
+              </div>
+            </div>
+            <div class="schedule__row">
+              <div class="schedule__cell schedule__footer">
+                <div class="schedule__good-comments good-comments">
+                  <div class="good-comments__left-column">
+                    <svg width="45" height="49">
+                      <use xlink:href="images/sprite.svg#trophy"></use>
+                    </svg>
+                  </div>
+                  <div class="good-comments__right-column">
+                    <p class="good-comments__text">Более <b class="about-tour__desktop-invisible-text">1</b><b>50</b> отзывов с&nbsp;оценкой <span class="visually-hidden">пять звёзд</span></p>
+                    <div class="good-comments__rate rating">
+                      <svg width="18" height="17">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="18" height="17">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="18" height="17">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="18" height="17">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
+                      <svg width="18" height="17">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <h2 class="map__title visually-hidden">Как нас найти</h2>
+        <div class="map__wrapper">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac6ad0ff6d2f7c22da3766407c881dff1d5416bd68d31b78473f47f37325ad317&amp;source=constructor" width="320" height="423"></iframe>
+          <img class="map__image" src="images/map.jpg" alt="Наш адрес: Москва, Большая Никитская, д.2">
+        </div>
+        <div class="tour-info tour-info__container container">
+          <div class="tour-info__slider slider">
+            <button class="slider__btn slider__btn--previous" type="button">Предыдущий слайд</button>
+            <button class="slider__btn slider__btn--next" type="button">Следующий слайд</button>
+            <ul class="slider__slides">
+              <li class="slider__slide slider__slide--1">
+                <span class="slider__number">1</span>
+                <p class="slider__question">Где встречаемся?</p>
+                <p class="slider__answer">Москва</p>
+              </li>
+              <li class="slider__slide slider__slide--2">
+                <span class="slider__number">2</span>
+                <p class="slider__question">Время съёмки</p>
+                <p class="slider__answer">3 часа </p>
+              </li>
+              <li class="slider__slide slider__slide--3">
+                <span class="slider__number">3</span>
+                <p class="slider__question">Мест осталось</p>
+                <p class="slider__answer">2</p>
+              </li>
+            </ul>
+            <ul class="slider__controls">
+              <li class="slider__control slider__control--active">1 слайд</li>
+              <li class="slider__control">2 слайд</li>
+              <li class="slider__control">3 слайд</li>
+            </ul>
+          </div>
+          <div class="tour-info__photographer">
+            <div class="tour-info__left-column">
+              <img class="tour-info__photo" src="images/photographer.jpg" alt="Фотограф Марина Иванова" width="67" height="67">
+            </div>
+            <div class="tour-info__right-column">
+              <h3 class="photographer__name">Марина Иванова</h3>
+              <p class="photographer__subtitle">Фотограф</p>
+              <a class="photographer__more-info" href="#">Показать больше информации о&nbsp;фотографе</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews hidden">
+        <div class="container">
+          <h2 class="section-title">Отзывы</h2>
+          <article class="reviews__review review">
+            <header class="review__header">
+              <img class="review__author-photo" src="images/comment-author--1.jpg" width="84" height="84" alt="Аватарка Валерии Антоновой">
+              <div class="review__info">
+                <h3 class="review__author-name">Валерия Антонова</h3>
+                <p class="review__author-profession">Арт-директор</p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказала съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+              <br class="review__plus-line">&nbsp;</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">27 Апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review">
+            <header class="review__header">
+              <img class="review__author-photo" src="images/comment-author--2.jpg" width="84" height="84" alt="Аватарка Виталия Петрова">
+              <div class="review__info">
+                <h3 class="review__author-name">Виталий Петров</h3>
+                <p class="review__author-profession">Фотограф</p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.<br>Организация полёта отличная. Спасибо!</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">19 апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review review--unvisible">
+            <header class="review__header review__header--no-profession">
+              <img class="review__author-photo" src="images/comment-author--3.jpg" width="84" height="84" alt="Аватарка Джима Керри">
+              <div class="review__info">
+                <h3 class="review__author-name">Джим Керри</h3>
+                <p class="review__author-profession"></p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и&nbsp;сытными)) Мы с&nbsp;собой ничего не&nbsp;брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А&nbsp;ещё нам всем напечатали по&nbsp;сертификату воздухоплавателя, правда некоторые ленятся за&nbsp;ним съездить))) Но&nbsp;всё равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">27 апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review hidden__content">
+            <header class="review__header">
+              <img class="review__author-photo" src="images/comment-author--1.jpg" width="84" height="84" alt="Аватарка Валерии Антоновой">
+              <div class="review__info">
+                <h3 class="review__author-name">Валерия Антонова</h3>
+                <p class="review__author-profession">Арт-директор</p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказала съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!
+              <br class="review__plus-line">&nbsp;</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">27 Апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review hidden__content">
+            <header class="review__header">
+              <img class="review__author-photo" src="images/comment-author--2.jpg" width="84" height="84" alt="Аватарка Виталия Петрова">
+              <div class="review__info">
+                <h3 class="review__author-name">Виталий Петров</h3>
+                <p class="review__author-profession">Фотограф</p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.<br>Организация полёта отличная. Спасибо!</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">19 апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review review--unvisible hidden__content">
+            <header class="review__header review__header--no-profession">
+              <img class="review__author-photo" src="images/comment-author--3.jpg" width="84" height="84" alt="Аватарка Джима Керри">
+              <div class="review__info">
+                <h3 class="review__author-name">Джим Керри</h3>
+                <p class="review__author-profession"></p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и&nbsp;сытными)) Мы с&nbsp;собой ничего не&nbsp;брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А&nbsp;ещё нам всем напечатали по&nbsp;сертификату воздухоплавателя, правда некоторые ленятся за&nbsp;ним съездить))) Но&nbsp;всё равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">27 апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review hidden__content">
+            <header class="review__header">
+              <img class="review__author-photo" src="images/comment-author--2.jpg" width="84" height="84" alt="Аватарка Виталия Петрова">
+              <div class="review__info">
+                <h3 class="review__author-name">Виталий Петров</h3>
+                <p class="review__author-profession">Фотограф</p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.<br>Организация полёта отличная. Спасибо!</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">19 апреля, 2019г.</p>
+            </footer>
+          </article>
+          <article class="reviews__review review review--unvisible hidden__content">
+            <header class="review__header review__header--no-profession">
+              <img class="review__author-photo" src="images/comment-author--3.jpg" width="84" height="84" alt="Аватарка Джима Керри">
+              <div class="review__info">
+                <h3 class="review__author-name">Джим Керри</h3>
+                <p class="review__author-profession"></p>
+                <div class="review__rating rating">
+                  <span class="visually-hidden">Рейтинг: 5 звёзд</span>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  <svg width="18" height="17">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="review__recommend-mark">Супер! Я бы заказал съёмку снова!</p>
+            </header>
+            <div class="review__main">
+              <p class="review__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и&nbsp;сытными)) Мы с&nbsp;собой ничего не&nbsp;брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А&nbsp;ещё нам всем напечатали по&nbsp;сертификату воздухоплавателя, правда некоторые ленятся за&nbsp;ним съездить))) Но&nbsp;всё равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+            </div>
+            <footer class="review__footer">
+              <p class="review__date">27 апреля, 2019г.</p>
+            </footer>
+          </article>
+          <button class="reviews__show-all  hidden__open-button" type="button">Показать Все (<span class="reviews__count">134</span>)</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <a class="page-footer__home-link">
+          <span class="visually-hidden">Helifly</span>
+          <img class="page-footer__logo" src="images/logo.svg" alt="Логотип компании Helifly">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__btn">
+            <a class="social__link" href="https://vk.com" aria-label="Наша группа Вконтакте">
+              <svg width="26" height="16">
+                <use xlink:href="images/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__btn">
+            <a class="social__link" href="https://facebook.com" aria-label="Наша группа на Фейсбуке">
+              <svg width="26" height="27">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__btn">
+            <a class="social__link" href="https://instagram.com" aria-label="Мы в Инстаграме">
+              <svg width="26" height="26">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="page-footer__set-language page-footer__set-language--tablet" type="button">RU</button>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="page-footer__flex-container">
+          <p class="visually-hidden">Мы принимаем:</p>
+          <ul class="page-footer__payment-methods">
+            <li class="page-footer__payment-method mastercard">MasterCard</li>
+            <li class="page-footer__payment-method visa">Visa</li>
+            <li class="page-footer__payment-method paypal">Paypal</li>
+          </ul>
+          <button class="page-footer__set-language page-footer__set-language--mobile" type="button">RU</button>
+        </div>
+        <div class="page-footer__info">
+          <p class="page-footer__support">Тех. поддержка: 8(800)700-00-00</p>
+          <p class="page-footer__copyright">&copy; 2018 HELYFLY. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--modal-window for reservation form-->
+    <div class="popup">
+      <div class="popup__wrapper">
+        <div class="popup__background"></div>
+        <form class="popup__form reservation" action="https://echo.htmlacademy.ru" method="post">
+          <button class="popup__close-btn" type="button">Закрыть</button>
+          <h2 class="reservation__title">Бронирование</h2>
+          <div class="reservation__line reservation__line--with-button">
+            <label class="reservation__label reservation__label--for-required" for="date-id">Дата</label>
+            <input class="reservation__input" id="date-id" name="date" placeholder="Введите дату" required="">
+            <button class="reservation__choose-date schedule__choose-date" type="button">
+              Выбор даты
+              <svg width="18" height="18" fill="#83888a">
+                <use xlink:href="images/sprite.svg#calendar--colored"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="reservation__line">
+            <label class="reservation__label reservation__label--for-required" for="email-id">Email</label>
+            <input class="reservation__input" id="email-id" type="email" name="email" placeholder="Электронная почта" required="">
+          </div>
+          <div class="reservation__line">
+            <label class="reservation__label reservation__label--for-required" for="name-id">Имя</label>
+            <input class="reservation__input" id="name-id" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="">
+          </div>
+          <div class="reservation__line">
+            <label class="reservation__label reservation__label--for-required" for="surname-id">Фамилия</label>
+            <input class="reservation__input" id="surname-id" name="surname" placeholder="Фамилия" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="">
+          </div>
+          <div class="reservation__line">
+            <label class="reservation__label reservation__label--for-required" for="phone-id">Телефон</label>
+            <input class="reservation__input" id="phone-id" name="phone" placeholder="+7 (999) 123-45-67" pattern="^[0-9-+\s()]+$" required="">
+          </div>
+          <div class="reservation__line">
+            <label class="reservation__label reservation__label--for-required" for="card-number-id">Данные карты</label>
+            <div class="reservation__input-group">
+              <input class="reservation__input" id="card-number-id" name="card-number" placeholder="Номер карты" required="" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}" title="0000 0000 0000 0000">
+              <input class="reservation__input" id="card-expiration-date-id" name="card-expiration-date" placeholder="Срок действия" pattern="\d{2}\/\d{2}" required="" title="В формате ММ/ГГ">
+              <input class="reservation__input" id="card-CVV-id" name="card-CVV" placeholder="CVV" pattern="[0-9]{3,4}" required="" title="3 или 4 цифры, которые находятся на обратной стороне карты">
+            </div>
+          </div>
+          <div class="reservation__line">
+            <input class="reservation__checkbox visually-hidden" type="checkbox" name="user-agreement" id="user-agreement-id" checked="" required="" tabindex="-1">
+            <label class="reservation__label reservation__label--for-checkbox" for="user-agreement-id" tabindex="0">Я согласен с&nbsp;пользовательским соглашением и&nbsp;публичной офертой</label>
+          </div>
+          <button class="reservation__submit" type="submit">Забронировать</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/svgxuse.min.js" defer=""></script>
+  </body>
+</html>
