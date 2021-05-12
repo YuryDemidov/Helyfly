@@ -5,7 +5,7 @@
   "author": "Yury Demidov",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gh-pages": "^3.1.0",
@@ -21,13 +21,13 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "js-beautify": "^1.13.0",
+    "js-beautify": "^1.13.13",
     "merge-stream": "^2.0.0",
-    "node-sass": "^5.0.0",
-    "posthtml-include": "^1.5.0",
+    "node-sass": "^6.0.0",
+    "posthtml-include": "^1.7.1",
     "run-sequence": "^2.2.1",
-    "stylelint": "^13.7.2",
-    "stylelint-scss": "^3.18.0"
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.19.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -46,6 +46,6 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "13.12"
+    "node": "15"
   }
 }
